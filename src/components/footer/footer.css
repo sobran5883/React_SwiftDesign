@@ -1,0 +1,32 @@
+.support{
+    margin-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.bg-img{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    z-index: 3;
+}
+.information{
+    position: absolute;
+    display: flex;
+    background: #002A54;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    height: 500px;
+    z-index: 2;
+    text-align: left;
+    padding-left: 6rem;
+    padding-right: 10rem;
+}
+
+.info{
+    width: 12rem;
+    color: white;
+    padding-top: 3rem;
+}
