@@ -65,38 +65,41 @@
         width: 45%;
         border-radius: 18px;
         z-index: 5;
-        top: 23rem;
+        top: 21rem;
         left: 1rem;
         background: linear-gradient(125.2deg, #002A54 1.56%, #002A54 49.23%, rgba(0, 42, 84, 0.89) 95.34%),
         linear-gradient(124.38deg, #FFFFFF 1.31%, rgba(255, 255, 255, 0.29) 45.19%, rgba(255, 255, 255, 0.54) 96.4%);
     }
     .text h1{
-        font-size: 1rem;
+        font-size: 0.5rem;
         text-align: left;
         padding-left: 1rem;
         padding-right: 1rem;
     }
+    .text a{
+        font-size: 0.7rem;
+    }
     .text p{
-        font-size: 0.6rem;
+        font-size: 0.5rem;
         text-align: left;
         padding-left: 1rem;
         padding-right: 1rem;
     }
     .truck-img img{
         position: absolute;
-        width: 85%;
-        height: 45%;
+        width: 87%;
+        height: 50%;
         z-index: 4;
-        top: 22rem;
+        top: 19rem;
         right: 0rem;
     }
     .bg-color{
         background-color:red;
         position: relative;
         z-index: -1;
-        height: 12rem;
+        height: 18rem;
         width: 100%;
-        top: 28rem;
+        top: 22rem;
     }   
     .container {
         height: 60vh;

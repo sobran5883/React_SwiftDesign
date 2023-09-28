@@ -107,11 +107,31 @@
     
     }
     .blocks{
-        padding-left: 1rem;
+        padding-left: 0.5rem;
         padding-right: 2rem;
         /* overflow: scroll; */
     }
     .block p{
-        font-size: .8em;
+        font-size: .5rem;
     }
+    .blocks h3{
+        font-size: .6rem;
+    }
+    .block .log-img{
+        width: 35%;
+        height: 19%;
+    }
+    .headings h2{
+        font-size: 1rem;
+        padding-left: 2rem;
+    }
+    .headings h3{
+        font-size: 0.5rem;
+        padding-top: 0;
+    }
+    .headings h5{
+        padding-left: 2rem;
+        font-size: 0.5rem;
+    }
+
 }

@@ -109,7 +109,6 @@
     .media-heading{
         text-align: center;
         color: white;
-        padding: 1rem;
         display: initial;
     }
     .media-icons{
@@ -117,6 +116,9 @@
         justify-content: center;
         align-items: center;
         padding-bottom: 2rem;
+    }
+    .media-icons a{
+        width: 35%;
     }
     .copyright{
         display: flex;
@@ -134,6 +136,10 @@
     }
     .support-type p{
         display: none;
+    }
+    .support-type{
+        width: 4rem;
+        padding-left: 2rem;
     }
     #red-rate{
         border-radius: 2px solid black;
