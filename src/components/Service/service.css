@@ -1,79 +1,117 @@
-body{
+.service-container{
+    position: relative;
+    width: 100vw;
+    height:fit-content;
     background: linear-gradient(180deg, #0B2952 0%, #2A548E 100%);
+    margin-block-end: 1rem;
+    padding-block-end: 2rem;
+    z-index: -5;
 }
-
+.block .arrow{
+    padding-left: 8rem;
+}
 .headings h3{
     display: flex;
     color: white;
-    padding-left: 40px;
-    padding-top: 15px;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+.headings span{
+    color: red;
 }
 
 .headings h2{
     display: flex;
     color: white;
-    padding-left: 70px;
+    padding-left: 5rem;
+    padding-top: 1rem;
 }
 .headings h5{
     display: flex;
     color: white;
-    padding-left: 76px;
+    padding-left: 4rem;
     text-align: left;
     text-transform: lowercase;
 }
 .blocks{
     display: flex;
-}
-/* .block{
-    display: flex;
-    background-color: wheat;
-    width: 425px;
-    height: 558px;
-    top: -1488px;
-    left: -1969px;
-    border-radius: 0px, 60px, 0px, 60px;
-
-} */
-.blocks{
-    max-width: 1230px;
-    height: 1160px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap:30px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    /* overflow: scroll; */
 }
 .block{
-    background:white;
-    width: 325px;
-    height: 500px;
-    margin-left: 3rem;
-    padding: 1.2rem 1rem;
+    background: white;
+    width: 100%;
+    height: 100%;
     border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-}  
+    border-bottom-left-radius: 60px
 
+}
+.block .log-img{
+    width: 38%;
+    height: 19%;
+
+}
+.blocks{
+    max-width: 100rem;
+    /* height: 75rem; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:2rem;
+}
+.blocks p{
+    padding: 1rem;
+}
+.block .logo-img{
+    width: 38%;
+    height: 34%
+}
 #red-block{
     background: #ED1B24;
 }
 .blocks h3,p{
+    font-size: 1em;
     text-align: left;
+    color: #002A54;
 }
-.block .arrow{
-    padding-left: 180px;
+.company{
+    width: 50%;
+}
+.block p{
+    color: #002A54;
+}
 
-}
-.headings span{
-    color: red;
-    padding-left: 4px;
-    padding-right: 4px;
-}
 
 
 
 @media screen and (max-width:740px) {
     .blocks{
-        max-width: 90%;
+        max-width: 100%;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(2,1fr);
+    }
+    .block {
+        width: 38%;
+        height: fit-content
+    }
+    .arrow{
+        display:none;
+    }
+    .block{
+        background: white;
+        width: 110%;
+        height: fit-content;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px
+    
+    }
+    .blocks{
+        padding-left: 1rem;
+        padding-right: 2rem;
+        /* overflow: scroll; */
+    }
+    .block p{
+        font-size: .8em;
     }
 }

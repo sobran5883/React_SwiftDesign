@@ -1,9 +1,10 @@
-.container {
+.contact-container {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-block-end: 1rem;
 }
 
 .bgImg {
@@ -52,5 +53,15 @@
     color: red;
 }
 
-
+@media (max-width:768px){
+    .contact{
+        width: 19.6rem;
+    }
+    .contact h3{
+        font-size: 0.8rem;
+    }
+    .contact li a{
+        padding-left: 10rem;
+    }
+}
 

@@ -3,7 +3,7 @@ import React from 'react';
 import {useState} from 'react'
 import { Link } from 'react-router-dom';
 import Telephone from '../../assets/landline.png'
-import {FaBars,FaTimes} from 'react-icons/fa'
+import {FaBars,FaPhone,FaTimes} from 'react-icons/fa'
 
 const Navbar = ()=>{
     const [click, setClick] = useState(false);
@@ -29,13 +29,13 @@ const Navbar = ()=>{
                     <li>1300 779 438</li>
                 </div>
             </div>
-            <div className='nav-content'>
+            <div className={click ? "nav-content.active":"nav-content"}>
                 <div className='nav-middle'>
                     <li><Link to='/'>WHY SWIFT TRANSPORT</Link></li>
-                    <li><Link to='/'>FLEET</Link></li>
-                    <li><Link to='/'>COMPANY POLICIES</Link></li>
-                    <li><Link to='/'>ABOUT US</Link></li>
-                    <li><Link to='/'>CONTACT US</Link></li>
+                    <li><Link to='/fleet'>FLEET</Link></li>
+                    <li><Link to='/company_policy'>COMPANY POLICIES</Link></li>
+                    <li><Link to='/about_us'>ABOUT US</Link></li>
+                    <li><Link to='/contactUs'>CONTACT US</Link></li>
                 </div>
                 <div className='nav-bottom'>
                     <li><Link to='/'>Swift Intermodal</Link></li>
@@ -44,9 +44,15 @@ const Navbar = ()=>{
                 </div>
             </div>
             <div className='humburger' onClick={handleClick}>
-                {click ?(<FaTimes size={20} style={{color:"black"}}/>):(<FaBars size={20} style={{color:"white"}}/>)}
+                {click ?(<FaTimes size={30} style={{color:"black"}}/>):(<FaBars size={30} style={{color:"white"}}/>)}
+            </div>
+            <div className='phone'>
+            <a href='google.com'><FaPhone size={30} style={{color:'White',marginRight:"4rem"}}/></a>
+            </div>
+            <div className='strip'>
             </div>
         </div>
+        
     )
 }
 

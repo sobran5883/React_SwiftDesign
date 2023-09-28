@@ -1,0 +1,111 @@
+.goodCompany-container{
+    width: 100%;
+    height: fit-content;
+}
+.red-one{
+    width: 100%;
+    height: 73vh;
+    background-color: #ED1B24;
+    display: flex;
+}
+.truck h2{
+    color: white;
+    display: flex;
+    align-items: start;
+    padding-left: 4rem;
+    width:  100%;
+    display: block;
+}
+.truck img{
+    height: 76%;
+    width: 90%;
+    padding-left: 5rem;
+}
+.companies-container{
+    display: flex;
+    height: 79%;
+    width: 33rem;
+    background-color: white;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    border-radius: 20px;
+    margin-right: 2rem;
+}
+.left-row {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+    padding-top: 2rem;
+}
+.left-row img{
+    padding: 1rem;
+}
+.right-row{
+    display: flex;
+    flex-direction: column;
+    margin-left: -1rem;
+    margin-top: 4rem;
+}
+.right-row img{
+    padding: 1rem;
+}
+.truck h2{
+    font-size: 110%;
+}
+
+
+
+.blue-one{
+    display: flex;
+    background-color: #002A54;
+}
+.car img{
+    width: 80%;
+    /* padding-bottom: 10rem; */
+}
+.abc h4,h5{
+    color: white;
+}
+.abc img{
+    width: 92%;
+
+}
+
+@media (max-width: 768px){
+    .company{
+        width: 100%;
+    }
+    .companies-container{
+        height: 80%;
+        padding-bottom: 1rem;
+    }
+    .red-one{
+        height: 40vh;
+    }
+    .right-row{
+        margin-right: 3rem;
+    }
+    .truck img{
+        height: 65%;
+        width: 110%;
+        padding-left: 1rem;
+    }
+    .companies-container{
+        height: 75%;
+    }
+    .left-row{
+        padding-left: 0;
+    }
+    .left-row {
+        padding: 2rem;
+    }
+    .right-row{
+        margin-left: 0;
+    }
+    .left-row img{
+        width: 3rem;
+    }
+    .right-row img{
+        width: 3rem;
+    }
+}

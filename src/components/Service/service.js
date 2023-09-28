@@ -9,41 +9,41 @@ import arrow1 from '../../assets/redArrow.png'
 import arrow2 from '../../assets/whiteArrow.png'
 const Service=()=>{
     return(
-        <div className='container'>
+        <div className='service-container'>
             <div className='headings'>
-                <h3>Service</h3>
-                <h2>A <span> smarter </span> container transport business</h2>
+                <h2>Service</h2>
+                <h3>A <span> smarter </span> container transport business</h3>
                 <h5>AN ON-DEMAND CONTAINER TRANSPORT SOLUTION THAT WORKS, UTILISING THE LATEST IN GPS, GEO-MAPPING SOFTWARE AND TECHNOLOGY.</h5>
             </div>
             <div className='blocks'>
                 <div className='block'>
                     <h3>Transport - Container, Tautliner,  Bulk</h3>
-                    <img src={img4} alt='img'/>
-                    <p>Network of strategically based sites located on port (within 1km of container terminals) and off-port (within 15kms of capital city industrial zones) in all major capital cities across Australia. All sites are connected to the Port by High Productivity…</p>
+                    <img className='log-img' src={img4} alt='img'/>
+                    <p>Network of strategically based sites located on port (within 1km of container terminals) and off-port (within 15kms of capital city industrial zones) in all major capital cities across Australia.</p>
                     <img className='arrow' src={arrow1} alt='arrow'/>
                 </div>
                 <div className='block'>
                     <h3>Transport - Container, Tautliner,  Bulk</h3>
-                    <img src={img2} alt='img'/>
-                    <p>Network of strategically based sites located on port (within 1km of container terminals) and off-port (within 15kms of capital city industrial zones) in all major capital cities across Australia. All sites are connected to the Port by High Productivity…</p>
+                    <img className='log-img' src={img2} alt='img'/>
+                    <p>Network of strategically based sites located on port (within 1km of container terminals) and off-port (within 15kms of capital city industrial zones) in all major capital cities across Australia.</p>
                     <img className='arrow' src={arrow1} alt='arrow'/>
                 </div>
                 <div className='block'>
                     <h3>Transport - Container, Tautliner,  Bulk</h3>
-                    <img src={img1} alt='img'/>
-                    <p>Network of strategically based sites located on port (within 1km of container terminals) and off-port (within 15kms of capital city industrial zones) in all major capital cities across Australia. All sites are connected to the Port by High Productivity…</p>
+                    <img className='log-img' src={img1} alt='img'/>
+                    <p>Network of strategically based sites located on port (within 1km of container terminals) and off-port (within 15kms of capital city industrial zones) in all major capital cities across Australia.</p>
                     <img className='arrow' src={arrow1} alt='arrow'/>
                 </div>
                 <div className='block'>
                     <h3>Transport - Container, Tautliner,  Bulk</h3>
-                    <img src={img5} alt='img'/>
-                    <p>Network of strategically based sites located on port (within 1km of container terminals) and off-port (within 15kms of capital city industrial zones) in all major capital cities across Australia. All sites are connected to the Port by High Productivity…</p>
+                    <img className='log-img' src={img5} alt='img'/>
+                    <p>Network of strategically based sites located on port (within 1km of container terminals) and off-port (within 15kms of capital city industrial zones) in all major capital cities across Australia.</p>
                     <img className='arrow' src={arrow1} alt='arrow'/>
                 </div>
                 <div className='block' id='red-block'>
                     <h3>Transport - Container, Tautliner,  Bulk</h3>
-                    <img src={img3} alt='img'/>
-                    <p>Network of strategically based sites located on port (within 1km of container terminals) and off-port (within 15kms of capital city industrial zones) in all major capital cities across Australia. All sites are connected to the Port by High Productivity…</p>
+                    <img className='log-img' src={img3} alt='img'/>
+                    <p>Network of strategically based sites located on port (within 1km of container terminals) and off-port (within 15kms of capital city industrial zones) in all major capital cities across Australia.</p>
                     <img className='arrow' src={arrow2} alt='arrow'/>
                 </div>
             </div>

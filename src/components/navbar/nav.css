@@ -1,7 +1,9 @@
+
+
 .header{
     position: relative;
     width: 100%;
-    z-index: 10;
+    z-index: 3;
 }
 /* .header-bg{
     background-color: black;
@@ -66,8 +68,10 @@
 .humburger{
     display: none;
 }
-
-@media screen and (max-width:1040px){
+.phone{
+    display: none;
+}
+/* @media screen and (max-width:1040px){
     .header{
         flex-direction: column;
         justify-content: center;   
@@ -78,9 +82,13 @@
         position: absolute;
         top: 0;
         left: -100%;
-        z-index: -3;
+        z-index: 3;
         transition: 1s;
     }
+    .nav-upper{
+        display: none;
+    }
+
     .nav-menu.active{
         left: 0;
     }
@@ -92,5 +100,99 @@
     }
     .humburger{
         display: initial;
+        padding-top: 30px;
+        padding: 475px;
     }
+} */
+
+@media (max-width: 768px) {
+    .header {
+      flex-direction: column; /* Stack elements vertically */
+      /* padding: 10px; */
+    }
+  
+    .nav-upper {
+        display: none;
+    }
+  
+    .humburger {
+      display: block; /* Show the burger icon */
+      position: absolute;
+      top: 50px;
+      right: 30px;
+      cursor: pointer;
+    }
+    .phone { 
+        display: block;/* Show the burger icon */
+      position: absolute;
+      top: 50px;
+      right: 70px;
+      width: 40px;
+      cursor: pointer;
+    }
+    .phone a{
+        right: 2px;
+        position: absolute;
+        z-index: 3;
+    }
+  
+    .nav-content { /* Hide all nav content by default */
+      width: 100%;
+      top: 60px; 
+      flex-direction: column;
+        justify-content: center;   
+        align-items: center;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        left: -100%;
+        z-index: -3;
+        transition: 1s;
+    }
+    .nav-content.active{
+        left: 0;
+    }
+    .nav-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px; /* Add spacing from the top */
+    }
+    .nav-middle{
+        position: absolute;
+        top: 310px;
+        right: 125px;
+        font-size: 26px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-middle li a{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .nav-middle li a:hover{
+        color: red;
+    }
+    .nav-bottom{
+        display: none;
+    }
+    .humburger{
+        display: initial;
+
+    }
+  .content .upper-text{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .content .lower-text{
+    display: none;
+  }
+  .strip{
+    background-color: red;
+    color: purple;
+    height: 100px;
+    width: 100%;
+  }
 }
