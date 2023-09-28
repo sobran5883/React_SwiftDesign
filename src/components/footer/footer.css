@@ -137,9 +137,8 @@
     .support-type p{
         display: none;
     }
-    .support-type{
-        width: 4rem;
-        padding-left: 2rem;
+    .support-type img{
+        width:3rem;
     }
     #red-rate{
         border-radius: 2px solid black;
